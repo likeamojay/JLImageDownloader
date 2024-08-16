@@ -13,6 +13,8 @@
 		1AD63DEE2C6D872E003600E0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1AD63DED2C6D872E003600E0 /* Base */; };
 		1AD63DF02C6D8730003600E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD63DEF2C6D8730003600E0 /* Assets.xcassets */; };
 		1AD63DF32C6D8730003600E0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1AD63DF22C6D8730003600E0 /* Base */; };
+		1AD72FDB2C6EE1AD00CD1BF5 /* JLImageDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD72FDA2C6EE1AD00CD1BF5 /* JLImageDownloader.framework */; };
+		1AD72FDC2C6EE1AD00CD1BF5 /* JLImageDownloader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD72FDA2C6EE1AD00CD1BF5 /* JLImageDownloader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,6 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1AD72FDC2C6EE1AD00CD1BF5 /* JLImageDownloader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +40,7 @@
 		1AD63DEF2C6D8730003600E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AD63DF22C6D8730003600E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AD63DF42C6D8730003600E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD72FDA2C6EE1AD00CD1BF5 /* JLImageDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JLImageDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD72FDB2C6EE1AD00CD1BF5 /* JLImageDownloader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,7 @@
 		1AD63E2D2C6D8B63003600E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AD72FDA2C6EE1AD00CD1BF5 /* JLImageDownloader.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -320,8 +326,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,8 +353,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

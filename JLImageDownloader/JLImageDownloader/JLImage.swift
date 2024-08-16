@@ -9,13 +9,18 @@ import SwiftUI
 
 // MARK: - SwiftUI Bridge
 
-struct JLImage: View {
+public struct JLImage: View {
 
     @State private var uiImage: UIImage? = nil
-    var urlString: String
-    var placeholderImage: String?
+    private var urlString: String
+    private var placeholderImage: String?
+    
+    public init(urlString: String, placeholderImage: String? = nil) {
+        self.urlString = urlString
+        self.placeholderImage = placeholderImage
+    }
 
-    var body: some View {
+    public var body: some View {
         Group {
             if let uiImage = uiImage {
                 Image(uiImage: uiImage)
@@ -36,7 +41,7 @@ struct JLImage: View {
         }
 
         Task.detached {
-            let image = await JLImageDownloader.shared.download(urlString: urlString)
+            let image = await JLImageDownloader.shared.downloadImage(urlString: urlString)
             DispatchQueue.main.async {
                 self.uiImage = image
             }

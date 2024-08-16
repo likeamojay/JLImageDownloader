@@ -11,18 +11,18 @@
 		1A6D80CA2C6E9E9B0065FDBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D80C92C6E9E9B0065FDBE /* ContentView.swift */; };
 		1A6D80CC2C6E9E9D0065FDBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D80CB2C6E9E9D0065FDBE /* Assets.xcassets */; };
 		1A6D80CF2C6E9E9D0065FDBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D80CE2C6E9E9D0065FDBE /* Preview Assets.xcassets */; };
-		1A6D80D72C6E9EB30065FDBE /* JLImageDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6D80D62C6E9EB30065FDBE /* JLImageDownloader.framework */; };
-		1A6D80D82C6E9EB30065FDBE /* JLImageDownloader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6D80D62C6E9EB30065FDBE /* JLImageDownloader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AD72FDD2C6EE20300CD1BF5 /* JLImageDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6D80D62C6E9EB30065FDBE /* JLImageDownloader.framework */; };
+		1AD72FDE2C6EE20300CD1BF5 /* JLImageDownloader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6D80D62C6E9EB30065FDBE /* JLImageDownloader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1A6D80D92C6E9EB30065FDBE /* Embed Frameworks */ = {
+		1AD72FDF2C6EE20300CD1BF5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1A6D80D82C6E9EB30065FDBE /* JLImageDownloader.framework in Embed Frameworks */,
+				1AD72FDE2C6EE20300CD1BF5 /* JLImageDownloader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6D80D72C6E9EB30065FDBE /* JLImageDownloader.framework in Frameworks */,
+				1AD72FDD2C6EE20300CD1BF5 /* JLImageDownloader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 				1A6D80C02C6E9E9B0065FDBE /* Sources */,
 				1A6D80C12C6E9E9B0065FDBE /* Frameworks */,
 				1A6D80C22C6E9E9B0065FDBE /* Resources */,
-				1A6D80D92C6E9EB30065FDBE /* Embed Frameworks */,
+				1AD72FDF2C6EE20300CD1BF5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
