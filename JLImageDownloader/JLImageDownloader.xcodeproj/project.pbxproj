@@ -13,6 +13,7 @@
 		1AD63E282C6D8788003600E0 /* JLImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD63E272C6D8788003600E0 /* JLImageDownloader.swift */; };
 		1AD72FD92C6EDEA800CD1BF5 /* JLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD72FD82C6EDEA800CD1BF5 /* JLImage.swift */; };
 		1AD72FE12C6EE97D00CD1BF5 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD72FE02C6EE97D00CD1BF5 /* Logging.swift */; };
+		1AD72FE32C6FA75C00CD1BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD72FE22C6FA75C00CD1BF5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		1AD63E272C6D8788003600E0 /* JLImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLImageDownloader.swift; sourceTree = "<group>"; };
 		1AD72FD82C6EDEA800CD1BF5 /* JLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLImage.swift; sourceTree = "<group>"; };
 		1AD72FE02C6EE97D00CD1BF5 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		1AD72FE22C6FA75C00CD1BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				1AD63E272C6D8788003600E0 /* JLImageDownloader.swift */,
 				1AD72FD82C6EDEA800CD1BF5 /* JLImage.swift */,
 				1AD72FE02C6EE97D00CD1BF5 /* Logging.swift */,
+				1AD72FE22C6FA75C00CD1BF5 /* Assets.xcassets */,
 			);
 			path = JLImageDownloader;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD72FE32C6FA75C00CD1BF5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
