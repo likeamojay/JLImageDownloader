@@ -24,7 +24,7 @@ struct ContentView: View {
     
     var body: some View {
         List(testImageUrls, id: \.self) { imageUrl in
-            JLImage(imageUrl).frame(250,250)
+            JLImage(imageUrl).frame(width: 250, height: 250)
         }
         .navigationTitle("Test Dog List")
     }

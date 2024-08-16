@@ -6,13 +6,12 @@
 //
 
 import UIKit
-import SwiftUI
 
 // MARK: - Constants
 
 let kLoggerHeading = "JLImageDownloader."
 
-fileprivate class JLImageDownloader {
+internal class JLImageDownloader {
     
     static let shared = JLImageDownloader()
     
@@ -73,41 +72,5 @@ extension UIImage {
 
     static func download(urlString: String) async -> UIImage? {
         return await JLImageDownloader.shared.download(urlString: urlString)
-    }
-}
-
-// MARK: - SwiftUI Bridge
-
-struct JLImage: View {
-    @State private var uiImage: UIImage? = nil
-    var urlString: String
-    var placeholderImage: String?
-
-    var body: some View {
-        Group {
-            if let uiImage = uiImage {
-                Image(uiImage: uiImage)
-                    .resizable()
-            } else {
-                Image(placeholderImage ?? "")
-                    .resizable()
-                    .onAppear {
-                        self.setImage()
-                    }
-            }
-        }
-    }
-
-    private func setImage() {
-        if let placeholderImage {
-            self.uiImage = UIImage(named: placeholderImage)
-        }
-
-        Task.detached {
-            let image = await JLImageDownloader.shared.download(urlString: urlString)
-            DispatchQueue.main.async {
-                self.uiImage = image
-            }
-        }
     }
 }

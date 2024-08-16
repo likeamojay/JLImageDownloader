@@ -21,22 +21,22 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TestCell" id="HhH-ol-Cbf" customClass="TestCell" customModule="TestApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="96.333335876464844"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="116.33333587646484"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HhH-ol-Cbf" id="l7z-kR-qVG">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="96.333335876464844"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="116.33333587646484"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="DL6-Vu-Yk0">
-                                                    <rect key="frame" x="121.66666666666669" y="8" width="150" height="80.333333333333329"/>
+                                                    <rect key="frame" x="50" y="8" width="293" height="100.33333333333333"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="1pM-dQ-foV"/>
-                                                        <constraint firstAttribute="height" constant="80" id="vN0-UW-umk"/>
+                                                        <constraint firstAttribute="height" constant="100" id="vN0-UW-umk"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="DL6-Vu-Yk0" firstAttribute="centerX" secondItem="l7z-kR-qVG" secondAttribute="centerX" id="HSU-Ep-smP"/>
+                                                <constraint firstAttribute="trailing" secondItem="DL6-Vu-Yk0" secondAttribute="trailing" constant="50" id="O8o-AS-tPE"/>
+                                                <constraint firstItem="DL6-Vu-Yk0" firstAttribute="leading" secondItem="l7z-kR-qVG" secondAttribute="leading" constant="50" id="PHJ-eY-fGg"/>
                                                 <constraint firstAttribute="bottom" secondItem="DL6-Vu-Yk0" secondAttribute="bottom" constant="8" id="QSJ-v2-iop"/>
                                                 <constraint firstItem="DL6-Vu-Yk0" firstAttribute="top" secondItem="l7z-kR-qVG" secondAttribute="top" constant="8" id="vtc-49-Mk7"/>
                                             </constraints>
