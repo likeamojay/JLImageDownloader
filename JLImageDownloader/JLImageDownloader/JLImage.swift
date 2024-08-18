@@ -26,7 +26,7 @@ public struct JLImage: View {
                 Image(uiImage: uiImage)
                     .resizable()
             } else {
-                Image(uiImage: UIImage(named: placeholderImage ?? "loading_icon", in: Bundle(identifier: "JLImageDownloader"), compatibleWith: nil) ?? UIImage())
+                Image(uiImage: UIImage(named: placeholderImage ?? "loading_icon", in: Bundle.jlImageDownloader, compatibleWith: nil) ?? UIImage())
                     .resizable()
                     .onAppear {
                         self.setImage()

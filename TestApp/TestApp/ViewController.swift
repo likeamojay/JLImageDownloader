@@ -51,6 +51,12 @@ class TestCell: UITableViewCell {
     
     @IBOutlet private var testImageView: UIImageView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.testImageView.image = UIImage(named: "loading_icon", in: Bundle.jlImageDownloader, with: nil)
+    }
+    
     override func prepareForReuse() {
         self.imageView?.image = nil
     }
