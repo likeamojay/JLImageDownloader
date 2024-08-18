@@ -18,3 +18,4 @@ JLImage(urlString: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-gar
 The Included Sample 'TestApp' and 'TestAppSwiftUI' projects construct a list of dog images from an array of hardcoded URL strings.
 
 
+![Simulator Screenshot - iPhone 15 - 2024-08-17 at 19 39 27](https://github.com/user-attachments/assets/38b23720-02d7-4f5d-b43e-4108e16918dd)
