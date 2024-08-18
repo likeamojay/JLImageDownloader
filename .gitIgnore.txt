@@ -1,0 +1,114 @@
+# Xcode
+#
+build/
+DerivedData/
+.idea/
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcworkspace/xcuserdata
+*.xcworkspace/xcshareddata
+
+# Swift Package Manager
+#
+Packages/
+.swiftpm/
+.build/
+
+# CocoaPods
+#
+Pods/
+Podfile.lock
+
+# Carthage
+#
+Carthage/Build/
+
+# Accio dependency management
+#
+.accio/
+
+# Fastlane
+#
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/report.html
+
+# Code Coverage
+#
+xccovreport/
+xccovarchive/
+
+# Bundle artifacts
+#
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds
+#
+timeline.xctimeline
+playground.xcworkspace
+
+# Xcode project temp files
+#
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/xcshareddata/
+
+# Xcode scheme files
+#
+*.xcscheme
+*.xcschememanagement.plist
+
+# Xcode IDE templates
+#
+*.ide_template_mac
+*.ide_template_ios
+
+# App Store
+#
+*.itmsp/
+
+# Spaceship
+#
+.spaceauth
+
+# Device-specific files
+#
+device-*.xcuserstate
+
+# Core Data generated files
+#
+*.xccurrentversion
+
+# Other
+#
+*.hmap
+*.ipa
+*.dSYM
+*.bcsymbolmap
+*.xcuserstate
+
+# Mac
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~.nib
+
+# Xcode Generated
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.xcworkspace/
+!default.xcworkspace/
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
