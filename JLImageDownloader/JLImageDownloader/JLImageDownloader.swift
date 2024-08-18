@@ -12,38 +12,72 @@ internal class JLImageDownloader {
     static let shared = JLImageDownloader()
     
     private var cache = [String: UIImage]()
-
+    private var downloadsInProgress = [String: Task<UIImage?, Never>]()
+    private let cacheQueue = DispatchQueue(label: "com.JLImagedownloader.cacheQueue", attributes: .concurrent)
+    
     func downloadImage(urlString: String) async -> UIImage? {
-        if let cachedImage = self.cache[urlString] {
+        
+        // Check if the image is already in the cache
+        let cachedImage = cacheQueue.sync {
+            return cache[urlString]
+        }
+        if let cachedImage {
             return cachedImage
         }
-
+        
+        // Check if there is already an ongoing download for this URL
+        if let existingTask = downloadsInProgress[urlString] {
+            return await existingTask.value
+        }
+        
+        // Ensure the URL is valid
         guard let url = URL(string: urlString) else {
             log(methodName: "download", message: "URL is nil")
             return nil
         }
         
-        let request = URLRequest(url: url)
-
-        do {
-            let task = try await URLSession.shared.data(for: request)
-            let image = UIImage(data: task.0)
-            if image == nil {
-                log(methodName: "download", message: "response error \(task.1.debugDescription)")
+        // Create a new download task
+        let downloadTask = Task { () -> UIImage? in
+            defer {
+                // Remove the task from the ongoingTasks dictionary when done
+                cacheQueue.async(flags: .barrier) {
+                    self.downloadsInProgress[urlString] = nil
+                }
+            }
+            
+            do {
+                let (data, response) = try await URLSession.shared.data(from: url)
+    
+                guard let image = UIImage(data: data) else {
+                    log(methodName: "download", message: "Invalid image data from response: \(response.debugDescription)")
+                    return nil
+                }
+                
+                // Update the cache asynchronously
+                cacheQueue.async(flags: .barrier) {
+                    self.cache[urlString] = image
+                }
+                
+                return image
+            } catch let error as NSError {
+                log(methodName: "download", message: "dataTask error: \(error.debugDescription)")
                 return nil
             }
-            DispatchQueue.main.async {
-                self.cache[urlString] = image
-            }
-            return image
-        } catch let error as NSError {
-            log(methodName: "download", message: "dataTask error \(error.debugDescription)")
-            return nil
         }
+        
+        // Store the task in the ongoingTasks dictionary
+        cacheQueue.async(flags: .barrier) {
+            self.downloadsInProgress[urlString] = downloadTask
+        }
+        
+        return await downloadTask.value
     }
     
     func clearCache() {
-        self.cache.removeAll()
+        cacheQueue.async(flags: .barrier) {
+            self.cache.removeAll()
+            self.downloadsInProgress.removeAll()
+        }
     }
 }
 
