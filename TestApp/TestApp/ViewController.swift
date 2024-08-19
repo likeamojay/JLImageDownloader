@@ -54,7 +54,7 @@ class TestCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.testImageView.image = UIImage(named: "loading_icon", in: Bundle.jlImageDownloader, with: nil)
+        self.testImageView.image = UIImage(named: "loading_icon", in: Bundle.jlImageDownloader, with:  UIImage.SymbolConfiguration(scale: .default))
     }
     
     override func prepareForReuse() {
