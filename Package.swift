@@ -19,15 +19,7 @@ let package = Package(
         .target(
             name: "JLImageDownloader",
             dependencies: [],
-            path: "Sources",
-            resources: [
-                .process("Resources") // If you have resources
-            ]
-        ),
-        .testTarget(
-            name: "JLImageDownloaderTests",
-            dependencies: ["JLImageDownloader"],
-            path: "Tests"
-        ),
+            path: "JLImageDownloader",
+        )
     ]
 )
