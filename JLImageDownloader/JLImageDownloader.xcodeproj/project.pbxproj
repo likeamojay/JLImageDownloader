@@ -35,7 +35,7 @@
 		1AD72FD82C6EDEA800CD1BF5 /* JLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JLImage.swift; sourceTree = "<group>"; };
 		1AD72FE02C6EE97D00CD1BF5 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		1AD72FE22C6FA75C00CD1BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1AD72FE42C72C81900CD1BF5 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		1AD72FE62C72F03D00CD1BF5 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		1AD63DFA2C6D875E003600E0 = {
 			isa = PBXGroup;
 			children = (
-				1AD72FE42C72C81900CD1BF5 /* Package.swift */,
+				1AD72FE62C72F03D00CD1BF5 /* Package.swift */,
 				1AD63E062C6D875E003600E0 /* JLImageDownloader */,
 				1AD63E052C6D875E003600E0 /* Products */,
 			);
