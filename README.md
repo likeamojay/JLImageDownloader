@@ -13,7 +13,7 @@ testImageView.setImage(urlString: "https://hips.hearstapps.com/hmg-prod/images/d
 **Example SwiftUI Usage**
 
 ```
-JLImage(urlString: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg").frame(height: 200)
+JLImage(urlString: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg")
 ```
 
 The Included Sample 'TestApp' and 'TestAppSwiftUI' projects construct a list of dog images from an array of hardcoded URL strings.
