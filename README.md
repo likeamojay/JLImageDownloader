@@ -6,6 +6,7 @@ The library also caches images after they are downloaded so that if the same ima
 **Example UIKit Usage**
 
 ```
+@IBOutlet var testImageView: UIImageView!
 testImageView.setImage(urlString: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg")
 ```
 
